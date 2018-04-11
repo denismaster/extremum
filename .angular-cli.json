@@ -20,7 +20,7 @@
       "prefix": "app",
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.css",
-        "assets/fonts/lato.css",
+        "assets/latofonts.css",
         "styles.css"
       ],
       "scripts": [
