@@ -1,52 +1,51 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
-  <a class="navbar-brand">
-    <img src="assets/img/logo.png" width="32" alt="Логотип компании" *ngIf="showLogo">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-    aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto w-100 justify-content-around">
-      <li class="nav-item active">
-        <a class="nav-link">Главная
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link">Продукты</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link">Удостоверяющий центр</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link">Защита информации</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Карьера
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item">Вакансии</a>
-          <a class="dropdown-item">Стажировка</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">
-          О компании
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item">Лицензии</a>
-          <a class="dropdown-item" [routerLink]="['/about/requisites']">Реквизиты</a>
-          <a class="dropdown-item">Партнеры</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item">Контакты</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
-  </form>
+    <a class="navbar-brand" [routerLink]="['/home']">
+        <img src="assets/img/logo.png" width="32" alt="Логотип компании" *ngIf="showLogo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto w-100">
+            <li class="nav-item active">
+                <a class="nav-link" [routerLink]="['/home']">Главная
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/products']">Продукты</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/uc']">Удостоверяющий центр</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/security']">Защита информации</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Карьера
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" [routerLink]="['/jobs']">Вакансии</a>
+                    <a class="dropdown-item" [routerLink]="['/jobs/trainee']">Стажировка</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" [routerLink]="['/about']" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    О компании
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item">Лицензии</a>
+                    <a class="dropdown-item" [routerLink]="['/about/requisites']">Реквизиты</a>
+                    <a class="dropdown-item">Партнеры</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item">Контакты</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+    </form>
 </nav>
