@@ -1,4 +1,18 @@
+.navbar-dark{
+    background-color: #919191!important;
+}
+
 .nav-item{
-    font-size: 1rem;
-    font-weight: 600;    
+    padding:0.92857143em 1.14285714em;
+    font-weight: 400;    
+    line-height:1;
+
+}
+
+.nav-item:hover{
+    background-color:rgba(255,255,255,.08)
+}
+
+.navbar{
+    padding:0 0.5rem;
 }
