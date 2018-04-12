@@ -6,21 +6,24 @@
     padding-top:1rem!important;
 }
 
-.licenses{
+.features{
     background-color:#eee;
     transform: skewY(-2deg); 
 }
 
-.licenses > *{
+.features > *{
     transform: skewY(2deg);
 }
 
-.contacts{
+.partners{
     background-color:#eee;
-    border-top-left-radius: 100em/3em;
-    padding-bottom: 0!important;
+    border-radius: 100em/3em;
+
 }
 
+.contacts{
+    padding-bottom: 0!important;
+}
 
 
 .main-feature{
