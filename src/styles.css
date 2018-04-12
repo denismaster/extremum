@@ -3,7 +3,11 @@ body{
     font-family: "LatoWeb";
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.4285em
+    line-height: 1.4285em;
+    display: flex;
+    height: 100%;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 .navbar-brand{
@@ -13,3 +17,13 @@ body{
 .btn{
     border-radius: 0.2rem;
 }
+
+html, body {
+    height: 100%;
+  }
+  .content {
+    flex: 1 0 auto!important;
+  }
+  .footer {
+    flex-shrink: 0!important;
+  }
