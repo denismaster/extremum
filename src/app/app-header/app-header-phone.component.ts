@@ -11,6 +11,7 @@ import { Component, OnInit } from '@angular/core';
         `
         .navbar-text{
             font-size:1.25rem;
+            padding-right:1rem;
         }
         `
     ]
