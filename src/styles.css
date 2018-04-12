@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body{
     font-family: "LatoWeb";
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.4285em;
     display: flex;
@@ -26,4 +26,9 @@ html, body {
   }
   .footer {
     flex-shrink: 0!important;
+  }
+
+  h1,h2,h3{
+      font-weight: 800;
+      color: rgba(248,24,73);
   }
