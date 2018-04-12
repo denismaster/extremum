@@ -1,15 +1,26 @@
 .main-section{
-    padding: 9.5rem 0 10rem 0;
+    padding: 5rem 0 7rem 0;
 }
 
 .features{
+    padding-top:1rem!important;
+}
+
+.licenses{
     background-color:#eee;
     transform: skewY(-2deg); 
 }
 
-.features > *{
+.licenses > *{
     transform: skewY(2deg);
 }
+
+.contacts{
+    background-color:#eee;
+    border-top-left-radius: 100em/3em;
+    padding-bottom: 0!important;
+}
+
 
 
 .main-feature{
