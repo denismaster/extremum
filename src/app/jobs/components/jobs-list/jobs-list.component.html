@@ -1,0 +1,9 @@
+<div class="list-group" *ngIf="jobs">
+  <a *ngFor="let job of jobs.items" [href]="job.alternate_url" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h3 class="mb-1">{{job.name}}</h3>
+      <span *ngIf="job.salary"><i class="fas fa-ruble-sign"></i> {{ job.salary.from}}</span>
+    </div>
+    <span><i class="far fa-compass"></i> {{job.area.name}}</span>
+  </a>
+</div>
