@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
     selector: 'app-header-logo',
     template:`
     <a class="navbar-brand">
-        <img src="assets/img/logo.png" width="32" height="32" class="d-inline-block" alt=""> Группа компаний "Экстрим"
+        <img src="assets/img/logo.svg" width="32" height="32" class="d-inline-block" alt=""> Группа компаний "Экстрим"
     </a>
     `
 })
