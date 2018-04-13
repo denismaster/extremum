@@ -6,6 +6,7 @@ import { LoginComponent } from './components/login/login.component';
 import { AuthStore } from './auth-store.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { IfAuthDirective } from './directives/if-auth.directive';
 
 @NgModule({
   imports: [
@@ -15,8 +16,8 @@ import { RouterModule } from '@angular/router';
     FormsModule,
     ReactiveFormsModule,
   ],
-  declarations: [LoginComponent],
-  exports: [LoginComponent],
+  declarations: [LoginComponent, IfAuthDirective],
+  exports: [LoginComponent, IfAuthDirective],
 })
 export class AuthModule {
   static forRoot(): ModuleWithProviders {
