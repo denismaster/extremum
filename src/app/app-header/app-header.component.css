@@ -1,3 +1,14 @@
 .navbar-header{
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
+.btn-outline-light{
+    border-color: #ddd;
+    background-color: white;
+    color:#333
+}
+
+.btn-outline-light:hover{
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}

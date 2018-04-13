@@ -14,6 +14,7 @@ import { SecurityModule } from './security/security.module';
 import { JobsModule } from './jobs/jobs.module';
 import { AboutModule } from './about/about.module';
 import { AppRoutingModule } from './app-routing.module';
+import { AuthModule } from './auth/auth.module';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AuthModule,
     HomeModule,
     ProductsModule,
     SecurityModule,
