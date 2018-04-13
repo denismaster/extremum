@@ -47,18 +47,3 @@ h1,h2{
     justify-content: center;
     align-items: center;
 }
-
-.page-nav{
-    
-    font-weight: 600;
-    
-}
-
-.page-nav a{
-    color:black;
-    margin:0 0.5rem;
-}
-
-.page-nav .nav-link.active{
-    border-bottom: 2px solid #dc3545;
-}
