@@ -1,8 +1,23 @@
+<div class="page">
+  <div class="page-header">
+    <nav class="nav page-nav">
+      <a class="nav-link active" href="#info">О компании</a>
+      <a class="nav-link" [routerLink]="['/about','#services']">Возможности</a>
+      <a class="nav-link" href="#partners">Партнеры</a>
+      <a class="nav-link" href="#licenses">Лицензии</a>
+      <a class="nav-link" href="#contacts">Контакты</a>
+    </nav>
+  </div>
+</div>
 <section class="info main-section" id="info">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h2 class="features__title main-section__title">Группа компаний "Экстрим"</h2>
+        <div class="logo">
+          <img src="assets/img/logo.svg" width="72px" style="margin-right: 1rem" alt="Логотип компании">
+          <h2 class="info_title main-section__title">Группа компаний "Экстрим"</h2>
+        </div>
+        <br>
         <h3 class="text-center">Достигаем невозможного с 1994 года</h3>
         <br>
         <p class="features__text main-section__text">Группа компаний "Экстрим" с 1994г работает на рынке информационных технологий города Екатеринбурга и Свердловской
@@ -107,6 +122,42 @@
     </div>
   </div>
 </section>
+<section class="partners main-section" id="partners">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="features__title main-section__title">Наши партнеры</h2>
+      </div>
+    </div>
+    <div class="row d-flex align-items-center">
+      <div class="col-lg-5 col-xl-6">
+        <h3 class="stack__title main-section__title">Партнеры в сфере программного обеспечения</h3>
+      </div>
+      <div class="col-lg-7 col-xl-6">
+        <img src="assets/img/partners/microsoft.gif" alt="" width="128px">
+        <img src="assets/img/partners/oracle.gif" alt="" width="128px">
+        <img src="assets/img/partners/ibm.jpg" alt="" width="128px">
+        <img src="assets/img/partners/vmware.png" alt="" width="128px">
+        <img src="assets/img/partners/docsvision.jpg" alt="" width="128px">
+      </div>
+    </div>
+    <br>
+    <div class="row d-flex align-items-center">
+      <div class="col-lg-7 col-xl-6">
+        <img src="assets/img/partners/kaspersky.gif" alt="" width="128px">
+        <img src="assets/img/partners/cryptopro.png" alt="" width="128px">
+        <img src="assets/img/partners/positive.gif" alt="" width="128px">
+        <img src="assets/img/partners/signalcom.png" alt="" width="128px">
+        <img src="assets/img/partners/okbsapr.gif" alt="" width="128px">
+        <img src="assets/img/partners/infosec.png" alt="" width="128px">
+        <img src="assets/img/partners/ankad.jpg" alt="" width="128px">
+      </div>
+      <div class="col-lg-5 col-xl-6">
+        <h3 class="stack__title main-section__title">Партнеры в сфере защиты информации</h3>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="licenses main-section" id="licenses">
   <div class="container">
     <div class="row">
@@ -146,42 +197,6 @@
           </li>
           <li>Лицензия 1985 на тех. защиту - ФСТЭК РФ на деятельность по технической защите конфиденциальной информации</li>
         </ul>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="partners main-section" id="partners">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class="features__title main-section__title">Наши партнеры</h2>
-      </div>
-    </div>
-    <div class="row d-flex align-items-center">
-      <div class="col-lg-5 col-xl-6">
-        <h3 class="stack__title main-section__title">Партнеры в сфере программного обеспечения</h3>
-      </div>
-      <div class="col-lg-7 col-xl-6">
-        <img src="assets/img/partners/microsoft.gif" alt="" width="128px">
-        <img src="assets/img/partners/oracle.gif" alt="" width="128px">
-        <img src="assets/img/partners/ibm.jpg" alt="" width="128px">
-        <img src="assets/img/partners/vmware.png" alt="" width="128px">
-        <img src="assets/img/partners/docsvision.jpg" alt="" width="128px">
-      </div>
-    </div>
-    <br>
-    <div class="row d-flex align-items-center">
-      <div class="col-lg-7 col-xl-6">
-        <img src="assets/img/partners/kaspersky.gif" alt="" width="128px">
-        <img src="assets/img/partners/cryptopro.png" alt="" width="128px">
-        <img src="assets/img/partners/positive.gif" alt="" width="128px">
-        <img src="assets/img/partners/signalcom.png" alt="" width="128px">
-        <img src="assets/img/partners/okbsapr.gif" alt="" width="128px">
-        <img src="assets/img/partners/infosec.png" alt="" width="128px">
-        <img src="assets/img/partners/ankad.jpg" alt="" width="128px">
-      </div>
-      <div class="col-lg-5 col-xl-6">
-        <h3 class="stack__title main-section__title">Партнеры в сфере защиты информации</h3>
       </div>
     </div>
   </div>
