@@ -1,7 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-
 import { AppComponent } from './app.component';
 import { AppHeaderComponent } from './app-header/app-header.component';
 import { AppMenuComponent } from './app-menu/app-menu.component';
@@ -14,7 +12,7 @@ import { SecurityModule } from './security/security.module';
 import { JobsModule } from './jobs/jobs.module';
 import { AboutModule } from './about/about.module';
 import { AppRoutingModule } from './app-routing.module';
-
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -28,6 +26,7 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AuthModule.forRoot(),
     HomeModule,
     ProductsModule,
     SecurityModule,

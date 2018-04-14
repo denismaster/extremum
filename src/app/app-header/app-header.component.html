@@ -3,6 +3,8 @@
 
   <div class="form-inline my-2 my-lg-0">
     <app-header-phone></app-header-phone>
-    <button class="btn btn-outline-danger btn-lg my-2 my-sm-0" type="submit">Напишите нам</button>
+    <button class="btn btn-outline-danger  my-2 my-sm-0" type="submit">Напишите нам</button>
+    <a *appIfAuth="false" class="btn btn-outline-light my-2 mx-2 my-sm-0" [routerLink]="['/login']">Войти</a>
+    <a *appIfAuth="true" class="btn btn-outline-light my-2 mx-2 my-sm-0" [routerLink]="['/admin']">Управление</a>
   </div>
 </header>

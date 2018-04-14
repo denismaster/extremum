@@ -59,8 +59,6 @@ html, body {
     margin-bottom: 0;
 }
 
-
-
 .page-nav{
     font-weight: 600
 }
@@ -68,8 +66,18 @@ html, body {
 .page-nav a{
     color:black;
     margin:0 0.5rem;
+    transition-duration: 0.5s;
+    transition-property: border-bottom-color;
+    border-bottom-color:white;
 }
 
-.page-nav .nav-link.active{
+.page-nav .nav-link.active,
+.page-nav .nav-link:hover {
     border-bottom: 2px solid #dc3545;
+}
+
+
+
+ul{
+    padding-left: 1rem;
 }
