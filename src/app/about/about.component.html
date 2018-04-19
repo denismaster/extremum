@@ -2,8 +2,8 @@
   <div class="page-header">
     <nav class="nav page-nav">
       <a class="nav-link active" href="#info">О компании</a>
-      <a class="nav-link" [routerLink]="['/about','#services']">Возможности</a>
-      <a class="nav-link" href="#partners">Партнеры</a>
+      <a class="nav-link" [routerLink]="['/about']" [fragment]="'services'">Возможности</a>
+      <a class="nav-link" [routerLink]="['/about']" [fragment]="'partners'">Партнеры</a>
       <a class="nav-link" href="#licenses">Лицензии</a>
       <a class="nav-link" href="#contacts">Контакты</a>
     </nav>
@@ -206,18 +206,40 @@
     <div class="row">
       <div class="col-md-12">
         <h2 class="features__title main-section__title">Контакты</h2>
-        <h3 class="features__title main-section__title">8 800 222 1468</h3>
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <span class="nav-link">ГК Экстрим</span>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="mailto:xrm@xrm.ru">xrm@xrm.ru</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/about/requisites']">Реквизиты</a>
-          </li>
-        </ul>
+      </div>
+    </div>
+    <div class="row bulb-container">
+      <div class="col-md-4">
+        <div class="bulb">
+          <div class="bulb-logo">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="bulb-text">
+            <h3>8 800 222 1468</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bulb">
+          <div class="bulb-logo">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="bulb-text">
+            <h3><a href="mailto:order@xrm.ru">
+              order@xrm.ru
+            </a></h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bulb">
+          <div class="bulb-logo">
+            <i class="fas fa-map-marker"></i>
+          </div>
+          <div class="bulb-text">
+            <h3>Екатеринбург, Мамина-Сибиряка 85, офис 619</h3>
+          </div>
+        </div>
       </div>
     </div>
     <div class="row">

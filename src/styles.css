@@ -81,3 +81,18 @@ html, body {
 ul{
     padding-left: 1rem;
 }
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section{
+    padding: 5rem 0 7rem 0;
+}
+
+.main-feature__title{
+    font-weight: bold;
+}
